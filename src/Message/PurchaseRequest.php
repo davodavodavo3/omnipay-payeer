@@ -2,7 +2,6 @@
 
 namespace Omnipay\Payeer\Message;
 
-
 class PurchaseRequest extends AbstractRequest
 {
     public function getAccount()

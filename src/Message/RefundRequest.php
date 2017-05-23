@@ -71,5 +71,4 @@ class RefundRequest extends AbstractRequest
         $jsonResponse = json_decode($httpResponse->getBody(true));
         return $this->response = new RefundResponse($this, $jsonResponse);
     }
-
 }

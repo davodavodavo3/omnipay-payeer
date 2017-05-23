@@ -6,7 +6,6 @@ use Omnipay\Common\Message\AbstractResponse;
 use Omnipay\Common\Message\RedirectResponseInterface;
 use Omnipay\Common\Message\RequestInterface;
 
-
 class PurchaseResponse extends AbstractResponse implements RedirectResponseInterface
 {
     protected $redirectUrl;

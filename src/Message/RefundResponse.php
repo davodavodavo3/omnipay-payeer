@@ -39,5 +39,4 @@ class RefundResponse extends AbstractResponse
         }
         $this->success = true;
     }
-
 }
