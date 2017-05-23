@@ -66,13 +66,13 @@ class Gateway extends AbstractGateway
 
     public function getDefaultParameters()
     {
-        return array(
-            'account' => '',
-            'api_id' => '',
+        return [
+            'account' 	=> '',
+            'api_id' 	=> '',
             'api_secret' => '',
-            'shop_id' => '',
+            'shop_id' 	=> '',
             'shop_secret' => '',
-        );
+        ];
     }
 
     public function purchase(array $parameters = array())
