@@ -19,15 +19,21 @@
             "email": "davodavodav333@gmail.com"
         }
     ],
+	"autoload": {
+        "psr-4": {
+            "Omnipay\\Payeer\\": "src/"
+        }
+    },
     "require": {
         "omnipay/common": "~2.0"
     },
     "require-dev": {
         "omnipay/tests": "~2.0"
     },
-    "autoload": {
-        "psr-4": {
-            "Omnipay\\Payeer\\": "src"
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.3.x-dev"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
