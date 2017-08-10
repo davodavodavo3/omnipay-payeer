@@ -63,6 +63,16 @@ class Gateway extends AbstractGateway
     {
         return $this->setParameter('shop_secret', $value);
     }
+	
+	public function getShopLang()
+    {
+        return $this->getParameter('shop_lang');
+    }
+
+    public function setShopLang($value)
+    {
+        return $this->setParameter('shop_lang', $value);
+    }
 
     public function getDefaultParameters()
     {
@@ -72,6 +82,7 @@ class Gateway extends AbstractGateway
             'api_secret' => '',
             'shop_id' 	=> '',
             'shop_secret' => '',
+			'shop_lang' => '',
         ];
     }
 
