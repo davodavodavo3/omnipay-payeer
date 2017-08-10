@@ -64,7 +64,7 @@ class PurchaseRequest extends AbstractRequest
         $data['m_curr'] = $this->getCurrency();
         $data['m_desc'] = base64_encode($this->getDescription());
         $data['m_sign'] = $sign;
-		$data['lang']   = $this->getShopLang();
+	$data['lang']   = $this->getShopLang();
 
         return $data;
     }
