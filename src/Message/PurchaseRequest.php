@@ -33,6 +33,16 @@ class PurchaseRequest extends AbstractRequest
     {
         return $this->setParameter('shop_secret', $value);
     }
+	
+	public function getShopLang()
+    {
+        return $this->getParameter('shop_lang');
+    }
+
+    public function setShopLang($value)
+    {
+        return $this->setParameter('shop_lang', $value);
+    }
 
     public function getData()
     {
@@ -54,6 +64,7 @@ class PurchaseRequest extends AbstractRequest
         $data['m_curr'] = $this->getCurrency();
         $data['m_desc'] = base64_encode($this->getDescription());
         $data['m_sign'] = $sign;
+		$data['lang']   = $this->getShopLang();
 
         return $data;
     }
