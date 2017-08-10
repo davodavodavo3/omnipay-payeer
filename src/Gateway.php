@@ -82,7 +82,7 @@ class Gateway extends AbstractGateway
             'api_secret' => '',
             'shop_id' 	=> '',
             'shop_secret' => '',
-			'shop_lang' => '',
+	    'shop_lang' => '',
         ];
     }
 
